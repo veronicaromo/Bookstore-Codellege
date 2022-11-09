@@ -1,0 +1,43 @@
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(254, 254, 254, 0.3);
+}
+
+.consulta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.consulta>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.consulta h4 {
+    font-size: 17px;
+}
+
+.consulta p {
+    font-size: 14px;
+}
+
+i {
+    color: var(--primary);
+}
+
+nav {
+    background-color: var(--primary);
+    color: white;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 22px;
+}

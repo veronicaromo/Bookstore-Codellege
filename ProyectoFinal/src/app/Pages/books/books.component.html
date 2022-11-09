@@ -1,0 +1,26 @@
+<div class="books-collection">
+    <div class="flex">
+        <div *ngFor="let book of books" style="display: flex; flex-direction: row;">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body cards">
+                    <h5 class="card-title" style="color: var(--third);">{{book.title}}</h5>
+                    <hr style="border: 3px solid black;">
+                    <p> <span>Author:</span> {{book.author}}</p>
+                    <p><span>Genre:</span> {{book.literaryGenres}}</p>
+                    <p> <span>Year of publication:</span> {{book.year}}</p>
+                    <p><span>Total of pages:</span> {{book.pages}}</p>
+                    <p><span>Description:</span><br>{{book.description}}</p>
+                    <p><span>Price:</span> <span style="color: red;">${{book.price}}</span></p>
+                    <p>Total of units: {{book.units}}</p>
+                    <a class="btn btn-danger" (click)="delete(book._id)">Delete</a>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div style="margin-left: auto; margin-right: auto; text-align: center;">
+        <button class="btn agregar" [routerLink]="['/register']">Add new book</button>
+    </div>
+    <br>
+</div>

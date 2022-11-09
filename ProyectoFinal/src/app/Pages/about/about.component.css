@@ -1,0 +1,87 @@
+.about-us {
+    background-image: url('../../../assets/images/bg-about.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.about {
+    font-family: 'Source Serif Pro';
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: auto;
+    width: fit-content;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.container {
+    background-color: rgba(254, 254, 254, 0.4);
+    border-radius: 80px;
+    height: auto;
+}
+
+.centrar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.vsms {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mis-vis {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mis-vis>div {
+    width: 50%;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 320px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: transparent;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+}

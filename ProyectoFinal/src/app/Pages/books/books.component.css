@@ -1,0 +1,36 @@
+.books-collection {
+    background-color: var(--secondary);
+    border-radius: 40px;
+}
+
+.agregar {
+    background-color: var(--primary);
+    color: white;
+}
+
+.agregar:hover {
+    background-color: var(--secondary);
+    color: black;
+}
+
+.flex {
+    padding: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards {
+    border: 1px solid #000;
+    box-shadow: 5px 5px 5px 10px rgba(0, 78, 88, 0.6);
+    border-radius: 15px;
+}
+
+.card{
+    padding: 15px;
+}
+
+span {
+    color: var(--third);
+}

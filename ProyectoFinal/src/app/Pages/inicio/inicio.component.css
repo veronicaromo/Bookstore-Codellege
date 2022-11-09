@@ -1,0 +1,73 @@
+.inicio {
+    background-image: url("../../../assets/images/img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 80vh;
+}
+
+@media (min-width: 750px) {
+    .generos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .reasons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .imagenr {
+        border-radius: 100px;
+        box-shadow: 10px 10px rgba(49, 48, 48, 0.2);
+        width: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    .reasons {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagenr {
+        width: 100%;
+    }
+}
+
+@media (max-width: 749px) {
+    .generos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.card {
+    background-color: rgba(255, 254, 254, 0.2);
+}
+
+.reasons-bg {
+    background-image: url('../../../assets/images/Fondo-Reasons.png');
+}
+
+hr {
+    margin: 0%;
+    border: none;
+    height: 1px;
+    color: #000;
+    background-color: #000;
+}

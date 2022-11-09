@@ -1,0 +1,22 @@
+.fondo {
+    background-image: url('../../../assets/images/bg-register.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formulario {
+    border: 1px solid #000;
+    background-color: rgba(0, 78, 88, 0.5);
+    color: white;
+    box-shadow: 5px 5px 5px 10px rgba(0, 78, 88, 0.7);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
